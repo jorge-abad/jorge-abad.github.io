@@ -6,8 +6,226 @@
     <meta name="description" content="Personal website of Jorge Abad, Senior Economist at Banco de España">  
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="files/src/style.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Import Source Sans Pro font -->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200italic,300,300italic,400,400italic,500,500italic,600,600italic' rel='stylesheet'>
+    <!-- Import Helvetica font -->
+    <link href='https://fonts.googleapis.com/css?family=Helvetica:200,200italic,300,300italic,400,400italic,500,500italic,600,600italic' rel='stylesheet'>
+    <!-- Import Roboto font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Import the font awesome (symbols) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Load code for java-script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth; /* Optional for smooth scrolling */
+        }
+        #research {
+            scroll-margin-top: 40px; /* Scroll stops 20px above this div */
+        }
+        #policy {
+            scroll-margin-top: 40px; /* Scroll stops 20px above this div */
+        }
+    </style>
+
 </head>
 <body>
-    Welcome to my website!
+
+    <!--------------------------------------------------------------------------->
+    <!-- Header  -->
+    <!--------------------------------------------------------------------------->
+    <div class="header">
+        <div class="photo">
+            <img src="files/img/photo.png" alt="Jorge Abad" width="112" style="border:1px solid gray;margin:0px">
+          </div>
+          
+        <div class="title">
+            Jorge Abad
+        </div>
+        <div class="subtitle">
+            Research Economist, Banco de España
+        </div>
+        <div class="contact">
+            <ul>
+              <li><a href="mailto:jorgeabad@bde.es" target="_blank"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i>&nbsp;&nbsp; jorgeabad@bde.es</a></li>
+              <li><a href="https://goo.gl/maps/ozuDy9U6jLhQvBno6" target="_blank"><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i>&nbsp;&nbsp; Alcalá 48, 28014 Madrid, Spain</a></li>
+              <li><a href="tel:+34913385528" target="_blank"><i class="fa fa-phone fa-fw" aria-hidden="true"></i>&nbsp;&nbsp; (+34) 91 338 5528</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--------------------------------------------------------------------------->
+    <!-- Navigation bar -->
+    <!--------------------------------------------------------------------------->
+
+    <div class="topnav">
+        <a class="about" href="#">About</a>
+        <a class="pdf" href="doc/cv/abad-cv.pdf">CV</a>
+        <a class="research" href="#research">Research</a>
+        <a class="policy" href="#policy">Policy</a>
+    </div>
+      
+    <!--------------------------------------------------------------------------->
+    <!-- About  -->
+    <!--------------------------------------------------------------------------->
+    <div class="section" id="about">
+        <div class="subsection">
+            Welcome to my website! I am a research economist at <a href="https://www.bde.es/bde/en/" target="_blank">Banco de España</a>. My research interests are in the fields of macroeconomics and banking.
+        </div>
+        <!-- download curriculum --> 
+        <div class="subsection">
+            <a class="pdf" href="doc/cv/abad-cv.pdf" target="_blank">Curriculum vitae</a>
+        </div>
+    </div>
+      
+    <!--------------------------------------------------------------------------->
+    <!-- Research  -->
+    <!--------------------------------------------------------------------------->
+    <div class="section" id="research">
+        <h1>Publications</h1>
+        <div class="subsection">
+            <a href="https://doi.org/10.1016/j.jbankfin.2021.106168" target="_blank"><paper>Mapping exposures of EU banks to the global shadow banking system</paper></a>&nbsp;&nbsp;
+            <coauth>(w/ M. D’Errico, N. Killeen, V. Luz, T. Peltonen, R. Portes and T. Urbano)</coauth><br>
+            <journal>Journal of Banking and Finance</journal>, Volume 134, January 2022, Article 106168.<br>
+            <a class="more" onclick="showhide('abs_jbf')">Abstract</a>&nbsp;
+            <a class="more" onclick="showhide('other_jbf')">Other versions</a>&nbsp;
+            <a class="more" onclick="showhide('media_jbf')">Media</a>&nbsp;
+            <p id="abs_jbf" class="abstract" style="display:none">
+                This paper provides a unique snapshot of the asset exposures of EU banks to shadow banking entities within the global financial system. Drawing on a rich and novel dataset, we show that 60% of the EU banks’ exposures are towards non-EU entities, particularly US-domiciled shadow banking entities. We assess the degree of concentration across different types of shadow banking counterparties. We show that while banks’ exposures are diversified at the individual level, this diversification leads to high overlap across different types of shadow banking entities, with consequent systemic risk. We also examine how bank- and country-level characteristics relate to the exposures of EU banks to shadow banking entities. Our results emphasise the importance of monitoring these cross-border and cross-sector exposures and closing remaining data gaps.
+            </p>
+            <ul id="other_jbf" class="other" style="display:none">
+                <li><a class="link" href="https://www.nber.org/papers/w23280" target="_blank">NBER Working Paper 23280</a>&nbsp;</li>
+                <li><a class="link" href="https://cepr.org/publications/dp11919" target="_blank">CEPR Discussion Paper 11919</a>&nbsp;</li>
+                <li><a class="link" href="https://www.esrb.europa.eu/pub/pdf/wp/esrbwp40.en.pdf?9d8db679f9970997b65df4a5882a4f3b" target="_blank">ESRB Working Paper 40</a>&nbsp;</li>
+            </ul>           
+            <ul id="media_jbf" class="media" style="display:none">
+                <li><a class="link" href="https://cepr.org/voxeu/columns/mapping-interconnectedness-between-eu-banks-and-shadow-banking-entities" target="_blank">VoxEU article</a>&nbsp;</li>
+            </ul>
+        </div>
+    </div>
+    <div class="section">
+        <h1>Working papers</h1>
+        <div class="subsection">
+            <a href="https://www.cemfi.es/~suarez/Abad_Martinez-Miera_Suarez_2024.pdf" target="_blank"><paper>A macroeconomic model of banks’ endogenous systemic risk taking</paper></a>&nbsp;&nbsp;
+            <coauth>(w/ D. Martinez-Miera and J. Suarez)</coauth><br>
+            Submitted.<br>
+            <a class="more" onclick="showhide('abs_amms')">Abstract</a>&nbsp;
+            <a class="more" onclick="showhide('other_amms')">Other versions</a>&nbsp;
+            <p id="abs_amms" class="abstract" style="display:none">
+                We study banks’ systemic risk-taking decisions in a dynamic general equilibrium model, highlighting the macroprudential role of bank capital requirements. Banks decide on their unobservable exposure to systemic shocks by balancing risk-shifting gains against the value of preserving their capital after such shocks. Capital requirements reduce systemic risk taking, but at the cost of reducing credit and output in calm times, generating welfare trade-offs. We find that systemic risk taking is maximal after long periods of calm and may worsen if capital requirements are countercyclically adjusted. Removing deposit insurance introduces market discipline but increases the bank capital necessary to support credit, implies lower (though far from zero) optimal capital requirements and has nuanced social welfare effects.
+            </p>
+            <ul id="other_amms" class="other" style="display:none">
+                <li><a class="link" href="https://cepr.org/publications/dp19532" target="_blank">CEPR Discussion Paper 19532</a>&nbsp;</li>
+                <li><a class="link" href="https://www.bde.es/wbe/en/publicaciones/analisis-economico-investigacion/documentos-trabajo/a-macroeconomic-model-of-banks-systemic-risk-taking.html" target="_blank">Banco de España Working Paper 2441</a>&nbsp;</li>
+            </ul>           
+       </div>
+        <div class="subsection">
+            <a href="https://www.bde.es/f/webbe/SES/Secciones/Publicaciones/PublicacionesSeriadas/DocumentosTrabajo/24/Files/dt2404e.pdf" target="_blank"><paper>CBDC and the operational framework of monetary policy</paper></a>&nbsp;&nbsp;
+            <coauth>(w/ G. Nuño and C. Thomas)</coauth><br>
+            Revise and resubmit, <journal>Journal of Monetary Economics</journal>.<br>
+            <a class="more" onclick="showhide('abs_cbdc')">Abstract</a>&nbsp;
+            <a class="more" onclick="showhide('other_cbdc')">Other versions</a>&nbsp;
+            <a class="more" onclick="showhide('media_cbdc')">Media</a>&nbsp;
+            <p id="abs_cbdc" class="abstract" style="display:none">
+                We analyse the impact of introducing a central bank-issued digital currency (CBDC) on the operational framework of monetary policy and the macroeconomy as a whole. To this end, we develop a New Keynesian model with heterogeneous banks, a frictional interbank market, a central bank with deposit and lending facilities, and household preferences for different liquid assets. The model is calibrated to replicate the main monetary and financial aggregates in the euro area. Our analysis predicts that CBDC adoption implies a roughly equivalent reduction in banks’ deposit funding. However, this ‘deposit crunch’ has a rather small effect on bank lending to the real economy, and hence on aggregate investment and GDP. This result reflects the parallel impact of a CBDC on a central bank’s operational framework. For relatively moderate CBDC adoption levels, the reduction in deposits is absorbed by an almost one-to-one fall in reserves at the central bank, implying a transition from a ‘floor’ system – with ample reserves – to a ‘corridor’ system. For larger CBDC adoption, the loss of bank deposits is compensated by increased recourse to central bank credit, as the corridor system gives way to a ‘ceiling’ system with scarce reserves.
+            </p>
+            <ul id="other_cbdc" class="other" style="display:none">
+                <li><a class="link" href="https://www.bis.org/publ/work1126.pdf" target="_blank">BIS Working Paper 1126</a></li>
+                <li><a class="link" href="https://cepr.org/publications/dp18750" target="_blank">CEPR Discussion Paper 18750</a></li>
+                <li><a class="link" href="https://www.bde.es/wbe/en/publicaciones/analisis-economico-investigacion/documentos-trabajo/cbdc-and-the-operational-framework-of-monetary-policy.html" target="_blank">Banco de España Working Paper 2404</a></li>
+            </ul>           
+            <ul id="media_cbdc" class="media" style="display:none">
+                <li><a class="link" href="https://cepr.org/voxeu/columns/central-bank-digital-currency-and-operational-framework-monetary-policy" target="_blank">VoxEU article</a></li>
+                <li><a class="link" href="https://www.suerf.org/publications/suerf-policy-notes-and-briefs/cbdc-and-the-operational-framework-of-monetary-policy/" target="_blank">SUERF Policy Brief 809</a></li>
+            </ul>           
+        </div>
+        <div class="subsection">
+            <a href="doc/research/abad_sovereign_bank_nexus.pdf" target="_blank"><paper>Breaking the Sovereign-Bank Nexus</paper></a><br>
+            Reject and resubmit, <journal>Review of Economic Studies</journal>.<br>
+            <a class="more" onclick="showhide('abs_jmp')">Abstract</a>&nbsp;
+            <a class="more" onclick="showhide('other_jmp')">Other versions</a>&nbsp;
+            <a class="more" onclick="showhide('awards_jmp')">Awards</a>&nbsp;
+            <p id="abs_jmp" class="abstract" style="display:none">
+                This paper develops a quantitative dynamic general equilibrium model that features endogenous bank failure and sovereign default risk. It studies the feedback loop between sovereign and banking crises, and evaluates the effectiveness of bank capital regulation in addressing it. In the model, bank failure contributes to an increase of sovereign default risk through the government bailout of bank creditors. Meanwhile, holding high-yield risky sovereign bonds may be attractive to banks protected by limited liability. By increasing banks' failure risk and their funding costs, sovereign exposures hurt bank lending and contribute to further contractions in aggregate economic activity. Capital requirements shape banks' incentives to invest in sovereign debt. More stringent capital regulation makes banks safer, weakening the sovereign-bank nexus. This comes at the cost of constraining the overall supply of credit.
+            </p>
+            <ul id="other_jmp" class="other" style="display:none">
+                <li><a class="link" href="https://www.unicreditgroup.eu/content/dam/unicreditgroup-eu/ucfoundation/WorkingPapers/2019/WP-129-EU-JMBPA-Abad.pdf" target="_blank">Unicredit Foundation Working Paper 129</a></li>
+            </ul>           
+            <ul id="awards_jmp" class="media" style="display:none">
+                <li><a class="link" href="" target="_blank">1</a></li>
+                <li><a class="link" href="" target="_blank">2</a></li>
+            </ul>           
+        </div>
+       <div class="subsection">
+            <a href="doc/research/Abad-Suarez_paper_October_2018.pdf" target="_blank"><paper>The procyclicality of expected credit loss provisions</paper></a>&nbsp;&nbsp;
+            <coauth>(w/ J. Suarez)</coauth><br>
+            Revise and resubmit, <journal>Review of Corporate Finance Studies</journal>.<br>
+            <a class="more" onclick="showhide('abs_ecl')">Abstract</a>&nbsp;
+            <a class="more" onclick="showhide('other_ecl')">Other versions</a>&nbsp;
+            <a class="more" onclick="showhide('media_ecl')">Media</a>&nbsp;
+            <p id="abs_ecl" class="abstract" style="display:none">
+                The Great Recession has pushed accounting standards for banks' loan loss provisioning to shift from an incurred loss approach to an expected credit loss approach. IFRS 9 and the incoming update of US GAAP imply a more timely recognition of credit losses but also greater responsiveness to changes in aggregate conditions, which raises procyclicality concerns. This paper develops and calibrates a recursive ratings-migration model to assess the impact of different provisioning approaches on the cyclicality of banks' profits and regulatory capital. The model is used to analyze the effectiveness of potential policy responses to the procyclicality problem.
+            </p>
+            <ul id="other_ecl" class="other" style="display:none">
+                <li><a class="link" href="https://cepr.org/publications/dp13135" target="_blank">CEPR Discussion Paper 13135</a></li>
+            </ul>           
+            <ul id="media_ecl" class="media" style="display:none">
+                <li><a class="link" href="https://cepr.org/voxeu/columns/ifrs-9-and-covid-19-delay-and-freeze-transitional-arrangements-clock" target="_blank">VoxEU article</a></li>
+            </ul>           
+        </div>
+    </div>
+        <div class="section">
+            <h1>Work in progress</h1>
+            <div class="subsection">
+            <paper>The Heterogeneous Bank Lending Channel of Monetary Policy</paper>&nbsp;&nbsp;
+            <coauth>(w/ S. Bigio, S. Garcia-Villegas, J. Marbet and G. Nuño)</coauth><br>
+            <a class="more" onclick="showhide('abs_hetbank')">Abstract</a>&nbsp;
+            <p id="abs_hetbank" class="abstract" style="display:none">
+                This paper examines the role of bank heterogeneity in the transmission of monetary policy through the bank-lending channel. We specifically focus on ex-post heterogeneity in capital ratios and it's exposure to interest-rate risk. We introduce a heterogeneous-bank model, calibrated to replicate key features of the Euro area banking system. The model shows that banking systems with a high proportion of fixed-rate loans amplify the impact of monetary tightening and deteriorating financial stability. In turn, high-leverage banks tend to transmit monetary policy more effectively due to their higher marginal propensity to lend, making them more sensitive to changes in policy rates.
+            </p>
+        </div>
+    </div>
+    <div class="section" id="policy">
+        <h1>Policy papers</h1>
+
+        <div class="subsection">
+            <a href="https://www.bde.es/f/webbe/SES/Secciones/Publicaciones/PublicacionesSeriadas/DocumentosOcasionales/24/Fich/do2414.pdf" target="_blank"><paper>Cyclical systemic risks in Spain and their mitigation via countercyclical bank capital requirements</paper></a>&nbsp;&nbsp;
+            <coauth>(Contributing author)</coauth><br>
+            Banco de España Occasional Paper 2414 (2024). In Spanish.
+        </div>
+
+        <div class="subsection">
+            <a href="https://www.ecb.europa.eu/pub/pdf/scpops/ecb.op272~dd8168a8cc.en.pdf" target="_blank"><paper>The role of financial stability considerations in monetary policy and the interaction with macroprudential policy in the euro area</paper></a>&nbsp;&nbsp;
+            <coauth>(Contributing author)</coauth><br>
+            ECB Occasional Paper 272 (2021).
+        </div>
+
+        <div class="subsection">
+            <a href="https://www.europarl.europa.eu/RegData/etudes/IDAN/2020/651373/IPOL_IDA(2020)651373_EN.pdf" target="_blank"><paper>The relaxation of bank capital and liquidity requirements in the wake of the coronavirus crisis</paper></a>&nbsp;&nbsp;
+            <coauth>(w/ R. Repullo)</coauth><br>
+            European Parliamentary Research Service PE 651.373 3 (2020).
+        </div>
+
+        <div class="subsection">
+            <a href="doc/research/Abad-Suarez_July_2017_ESRB_OP12.pdf" target="_blank"><paper>Assessing the cyclical implications of IFRS 9 – a recursive model</paper></a>&nbsp;&nbsp;
+            <coauth>(w/ J. Suarez)</coauth><br>
+            ESRB Occasional Paper 17 (2017).
+        </div>
+
+        <div class="subsection">
+            <a href="doc/research/esrb_occasional_paper_11.en.pdf" target="_blank"><paper>Shedding light on dark markets: First insights from the new EU-wide OTC derivatives dataset</paper></a>&nbsp;&nbsp;
+            <coauth>(w/ I. Aldasoro, C. Aymanns, M. D'Errico, L. Rousova, P. Hoffmann, S. Langfield, M. Neychev and T. Roukny)</coauth><br>
+            ESRB Occasional Paper 11 (2016).
+        </div>
+
+    </div>
+
 </body>
+<script src="files/src/jsfile.js"></script>
 </html>
