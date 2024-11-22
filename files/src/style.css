@@ -18,12 +18,10 @@ Colors
     --hover: rgb(255, 151, 0);
     /* Publication outlets */
     --journal: rgb(106,24,6);
-    /* Html background */
-    --background: rgb(100,100,100,0.05);
     /* Main text */
-    --fontmain:rgb(79,76,76);
-    /* color for abstracts' text */
-    --fontabstract:rgb(97,97,97);
+    --body:rgb(79,76,76);
+    /* Abstract */
+    --abstract:rgb(97,97,97);
 }
 
 /*---------------------------------------------------------
@@ -45,7 +43,7 @@ Settings
 body{
     min-width:360px;
     max-width:960px;
-    color:var(--fontmain);
+    color:var(--body);
     background-color:white;
     margin:0px auto auto auto;
     padding: 20px;
@@ -170,7 +168,7 @@ journal{
 }
 /* Abstracts */
 .abstract{
-    color:var(--fontabstract);
+    color:var(--abstract);
     margin-top:8px;
     color:#616161;
     text-align:justify;
@@ -189,7 +187,12 @@ journal{
 coauth{
     font-size: 100%;
 }
-  
+a.more{
+    cursor: pointer;
+}
+a.less{
+    cursor: pointer;
+}
 /*---------------------------------------------------------
 Layout (<1000px)
 ---------------------------------------------------------*/
@@ -238,7 +241,6 @@ Layout (<500px)
 /*---------------------------------------------------------
 Icons
 ---------------------------------------------------------*/
-
 a.pdf::before,
 a.about::before,
 a.research::before,
