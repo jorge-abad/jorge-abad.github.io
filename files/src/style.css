@@ -11,13 +11,13 @@ Colors
 ---------------------------------------------------------*/
 :root {
     /* Title and section headers */
-    --main: rgb(173,51,51);
+    --main: rgb(51, 92, 173);
     /* Links */
-    --link: rgb(173,51,51);
+    --link: rgb(51, 92, 173);
     /* Links (hover) */
-    --hover: rgb(255, 151, 0);
+    --hover: rgb(255, 204, 0);
     /* Publication outlets */
-    --journal: rgb(106,24,6);
+    --journal: rgb(0, 50, 152);
     /* Main text */
     --body:rgb(79,76,76);
     /* Abstract */
