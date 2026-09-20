@@ -15,7 +15,7 @@ Colors
     /* Links */
     --link: rgb(51, 92, 173);
     /* Links (hover) */
-    --hover: rgb(255, 204, 0);
+    --hover: rgb(28, 58, 116);
     /* Publication outlets */
     --journal: rgb(0, 50, 152);
     /* Main text */
@@ -41,8 +41,7 @@ Settings
   -webkit-text-size-adjust: none;
 }
 body{
-    min-width:360px;
-    max-width:960px;
+    max-width:800px;
     color:var(--body);
     background-color:white;
     margin:0px auto auto auto;
@@ -136,10 +135,21 @@ a:hover{
     line-height:1.6;
     width:100%;
 }
+/* Paper entries: titles sit to the left of their supporting details. */
+.paper-entry{
+    padding-left:1.5em;
+    margin-bottom:1.75em;
+    width:auto;
+}
+.paper-title{
+    display:block;
+    margin-left:-1.5em;
+}
 /* Section headings */
 h1{
     color:var(--main);
     font-size:150%;
+    font-weight: 500;
     margin-bottom:15px;
     margin-top:0px;
 }
@@ -151,8 +161,8 @@ h2{
 /* Papers */
 paper{
     color:var(--main);
-    font-size:inherit;
-    font-weight: 400;
+    font-size:108%;
+    font-weight: 500;
 }
 paper::before{ content: open-quote;}
 paper::after{ content: close-quote;}
@@ -202,7 +212,7 @@ Layout (<1000px)
         font-size: 14px;
     }
     body{
-        margin:0px;
+        margin:0px auto;
         padding: 20px;
     }
     .photo {
